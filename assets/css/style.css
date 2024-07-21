@@ -1,0 +1,273 @@
+:root {
+  --warning: #ffc107;
+  --danger: #f5088e;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: +apple-system, BlinkMacSystemFont, "Sergoe UI",
+    Roboto, "Helevtica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Libeartion Mono", "Courrier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Section Header et navbar*/
+
+.navbar-nav {
+  color: grey;
+}
+.navbar-nav a:hover {
+  color: #5cadd3;
+  border-bottom: 3px solid #5cadd3;
+}
+
+/*Fin de section Header et navbar*/
+
+/*Section bannière*/
+
+#banniere:target {
+  padding-top: 80px;
+}
+
+.image-text {
+  top: 70px;
+  left: 250px;
+}
+
+.image-text button:hover {
+  color: #5cadd3;
+  background-color: white;
+}
+
+span {
+  color: #5cadd3;
+}
+
+.btn {
+  background-color: #5cadd3;
+  color: white;
+  border-color: #5cadd3;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #5cadd3;
+  background-color: white;
+}
+
+/*Fin Section bannière*/
+
+/*Section services*/
+
+#services:target {
+  padding-top: 80px;
+}
+
+.barre {
+  color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-circle {
+  color: #5cadd3;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.barre_service {
+  width: 50px;
+  border-top: 2px solid grey;
+  align-items: center;
+  line-height: 1px;
+  opacity: 50%;
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5cadd3;
+}
+
+.icone_circle {
+  width: 70px;
+  height: 70px;
+  border: 2px solid lightgrey;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 5s linear infinite;
+}
+
+.points {
+  position: absolute;
+  top: 4px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-chart-line {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+}
+
+.fa-cubes {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+}
+
+.fa-chart-pie {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+}
+
+/*Fin Section services*/
+
+/*Section projets*/
+
+#projets {
+  background-color: rgb(237, 237, 237);
+}
+
+#projets:target {
+  padding-top: 80px;
+}
+
+#menu_projet {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+li:hover .nav_projet {
+  background-color: rgba(120, 120, 120, 0.616);
+  border-radius: 5px;
+}
+
+.nav_projet a {
+  color: rgb(8, 8, 8);
+}
+
+.list_projet ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(211, 211, 211);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.card figure {
+  margin: 15px;
+}
+
+figure img {
+  width: 300px;
+  height: 100%;
+}
+
+figcaption {
+  position: absolute;
+  height: 70px;
+  width: 300px;
+  /*visibility: hidden;*/
+}
+
+figcaption strong {
+  padding-left: 0;
+}
+
+figcaption p {
+  padding-top: 3px;
+  text-align: left;
+}
+
+.fa-eye {
+  color: white;
+  border: 6px solid #5cadd3;
+  background-color: #5cadd3;
+  border-radius: 50%;
+  position: absolute;
+  left: 7em;
+  margin-top: -2.7em;
+  font-size: 2.05em;
+}
+
+figure:hover figcaption {
+  /*visibility: visible;*/
+  color: white;
+  background-color: #696969;
+  opacity: 80%;
+}
+
+.card figcaption {
+  color: white;
+  background-color: #4f4f4f;
+  position: absolute;
+  height: 24%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.images_portfolio figcaption:hover {
+  cursor: pointer;
+}
+
+/*Fin section projets*/
+
+/*Section contact*/
+
+iframe {
+  position: absolute;
+  width: 100%; /*largeur 100%*/
+  height: 700px;
+  z-index: 2;
+}
+
+/*Fin section contact*/
+
+/*Section footer*/
+
+footer {
+  font-size: 20px;
+  color: white;
+  background-color: #5cadd3;
+}
+
+/*Fin section footer*/
